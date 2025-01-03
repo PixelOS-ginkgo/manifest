@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="ryz"
+          fetch="https://github.com/kutemeikito" />
+
+  <remote name="github"
+          fetch="https://github.com/" />
+
+  <remote name="ryz-gitlab"
+          fetch="https://gitlab.com/kutemeikito" />
+
+  <!-- Device Tree & Vendor Tree -->
+  <project path="device/xiaomi/ginkgo" name="device_xiaomi_ginkgo" remote="ryz" revision="fifteen/pixelos" />
+  <project path="vendor/xiaomi/ginkgo" name="vendor_xiaomi_ginkgo" remote="ryz" revision="udc" />
+  
+  <!-- Kernel & Clang -->
+  <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/main" />
+
+  <!-- Replace Hals Display for fix GCAM-->
+  <remove-project name="LineageOS/android_hardware_qcom_display"/>
+  <project path="hardware/qcom-caf/sm8150/display" name="ClownUI/hardware_qcom_display" groups="qcom" revision="vic-caf-sm8150" remote="github"/>
+
+  <!-- Toolchain -->
+  <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="RastaMod69-Clang" remote="ryz-gitlab" revision="clang-20.0" />
+
+  <!-- MIUI Camera -->
+  <project path="vendor/miuicamera" name="android_vendor_miuicamera" remote="ryz" revision="arrow-12.0-a3" />
+
+</manifest>
