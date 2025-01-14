@@ -11,7 +11,7 @@
 
   <remote  name="ginkgo"
       fetch="https://github.com/PixelOS-ginkgo"
-           revision="refs/heads/fifteen-qpr1" />
+           revision="refs/heads/fifteen" />
 
   <!-- AOSP additions -->
   <project path="bionic" name="bionic" groups="pdk" remote="PixelOS" />
