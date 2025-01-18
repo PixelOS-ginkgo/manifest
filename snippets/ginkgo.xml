@@ -18,8 +18,7 @@
   <project path="kernel/xiaomi/ginkgo" name="android_kernel_xiaomi_ginkgo" remote="ryz" revision="fourteen/main" />
 
   <!-- Replace Hals Display for fix GCAM-->
-  <remove-project name="LineageOS/android_hardware_qcom_display"/>
-  <project path="hardware/qcom-caf/sm8150/display" name="ClownUI/hardware_qcom_display" groups="qcom" revision="vic-caf-sm8150" remote="github"/>
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom_display" groups="qcom" revision="vic-caf-sm8150" remote="ginkgo"/>
 
   <!-- Toolchain -->
   <project path="prebuilts/clang/host/linux-x86/clang-rastamod" name="RastaMod69-Clang" remote="ryz-gitlab" revision="clang-20.0" />
