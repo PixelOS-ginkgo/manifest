@@ -1065,6 +1065,7 @@
   <!-- END open-source projects -->
 
   <include name="snippets/remove.xml" />
+  <include name="snippets/ginkgo.xml" />
   <include name="snippets/custom.xml" />
   <include name="snippets/lineage.xml" />
 
